@@ -1,0 +1,18 @@
+{
+    "name": "Wipe",
+    "description": "Quickly delete the browsing history, cache and other things",
+    "version": "0.1",
+    "manifest_version": 3,
+    "permissions": [ "activeTab", "browsingData" ],
+    "action": {
+        "default_title": "Wipe",
+        "default_popup": "src/index.html"
+    },
+    "background": {
+        "service_worker": "src/background.js"
+    },
+    "icons": {
+        "48":  "images/icon48.png",
+        "128": "images/icon128.png"
+    }
+}
